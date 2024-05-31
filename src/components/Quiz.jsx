@@ -48,7 +48,7 @@ const Quiz = () => {
 
 
   return (
-    <div className='h-screen grid place-content-center bg-stone-300'>
+    <div className='h-screen grid place-content-center bg-stone-300 px-4 lg:px-0'>
         {
             !showResult ? (
                 <div className='border p-4 bg-white rounded flex flex-col gap-2'>
