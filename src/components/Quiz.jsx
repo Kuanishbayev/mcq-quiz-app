@@ -72,13 +72,13 @@ const Quiz = () => {
                     </button>
                 </div>
             ) : (
-                <div className='flex flex-col gap-2 bg-white rounded p-4 min-w-fit w-96'>
+                <div className='flex flex-col gap-2 bg-white rounded p-4'>
                     <h3 className='font-bold text-lg'>Result</h3>
                     <div className='border-b border-stone-500 pb-2'>
-                        <p className='flex justify-between'>Total Questions: <span className='font-bold'>{questions.length}</span></p>
-                        <p className='flex justify-between'>Total Score: <span className='font-bold'>{result.score}</span></p>
-                        <p className='flex justify-between'>Correct Answers: <span className='font-bold text-green-500'>{result.correctAnswers}</span></p>
-                        <p className='flex justify-between'>Wrong Answers: <span className='font-bold text-red-500'>{result.wrongAnswers}</span></p>
+                        <p className='flex justify-between gap-10'>Total Questions: <span className='font-bold'>{questions.length}</span></p>
+                        <p className='flex justify-between gap-10'>Total Score: <span className='font-bold'>{result.score}</span></p>
+                        <p className='flex justify-between gap-10'>Correct Answers: <span className='font-bold text-green-500'>{result.correctAnswers}</span></p>
+                        <p className='flex justify-between gap-10'>Wrong Answers: <span className='font-bold text-red-500'>{result.wrongAnswers}</span></p>
                     </div>
                     <button className='self-end bg-gray-500 px-4 py-2 rounded text-white' onClick={() => location.reload()}>Restart</button>
                 </div>
